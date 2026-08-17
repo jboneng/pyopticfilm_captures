@@ -1,0 +1,55 @@
+{
+  "schema_version": 1,
+  "generator": "extract_se_captures.py",
+  "usb_filter": {
+    "vid": "0x07b3",
+    "pid": "0x1825"
+  },
+  "framing": {
+    "matches_genesys_gl845_class": false,
+    "link_status_byte": "0x55",
+    "counts": {
+      "reg_write": 0,
+      "reg_read": 0,
+      "bulk_preamble": 0,
+      "vendor_unknown": 0,
+      "link_ok": 0,
+      "link_bad": 0
+    },
+    "notes": [
+      "No Genesys-class register/bulk preambles decoded \u2014 framing may differ or filter missed traffic."
+    ]
+  },
+  "device": {},
+  "sessions": {},
+  "implementation_tables": {
+    "init_regs": {},
+    "gpo_regs": {},
+    "frontend_regs": {},
+    "memory_layout_regs": {},
+    "sensor_custom_regs": {}
+  },
+  "hints": {
+    "status_register": null,
+    "lamp_candidates": [],
+    "fe_write_path": "unknown",
+    "ir_deltas_vs_color": {},
+    "soft_reset_from_cold_boot": []
+  },
+  "winusb_dumps": {},
+  "warnings": [
+    "Missing 02_cold_boot_open \u2014 implementation_tables left empty.",
+    "No capture files found under C:\\Users\\jbone\\Desktop\\PlustekLib\\captures\\8200i-se"
+  ],
+  "checklist": {
+    "A_device": "missing",
+    "B_framing": "missing",
+    "C_cold_boot": "missing",
+    "D_status": "missing",
+    "E_lamp_ir": "missing",
+    "F_motor_home": "missing",
+    "G_color_scan": "missing",
+    "H_ir_deltas": "missing",
+    "I_calib": "missing"
+  }
+}

@@ -1,0 +1,68 @@
+{
+  "note": "Full per-session dumps are regenerated with scripts/extract_se_afe_shading.py. Tests use afe_shading_fixture.json only.",
+  "sessions": {
+    "03": {
+      "fe_writes": 52,
+      "strip_sizes": [
+        3072,
+        62268
+      ],
+      "afe_final": {
+        "offsets": [
+          38,
+          30,
+          37
+        ],
+        "gains": [
+          18,
+          30,
+          23
+        ]
+      },
+      "shading_declared": 21064,
+      "shading_entries": 1755
+    },
+    "04": {
+      "fe_writes": 52,
+      "strip_sizes": [
+        3072,
+        62268
+      ],
+      "afe_final": {
+        "offsets": [
+          38,
+          30,
+          36
+        ],
+        "gains": [
+          19,
+          31,
+          23
+        ]
+      },
+      "shading_declared": 30208,
+      "shading_entries": 2517
+    },
+    "05": {
+      "fe_writes": 98,
+      "strip_sizes": [
+        3072,
+        62268
+      ],
+      "afe_final": {
+        "offsets": [
+          6,
+          16,
+          12
+        ],
+        "gains": [
+          45,
+          39,
+          36
+        ]
+      },
+      "shading_declared": 30208,
+      "shading_entries": 2517
+    }
+  }
+}

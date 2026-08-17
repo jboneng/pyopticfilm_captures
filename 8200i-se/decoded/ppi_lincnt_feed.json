@@ -1,0 +1,595 @@
+{
+  "native_dpi": 7200,
+  "travel_mm_formula": "lincnt * 25.4 / (4 * max(dpi, 600))",
+  "rule": "LINCNT is in ASIC-dpi units (four per output line; the bulk buffer's LINCNT/2 rows are Y sampled at 2x dpi), so a fixed crop needs a different LINCNT at every PPI. The motor limit is the scan-window end: feed2 + travel_steps <= 27636 (14400 steps/inch). Lab grind: feed2=13128 with 37.5 mm of travel ended 12 mm past it.",
+  "scan_window_end_steps": 27636,
+  "max_scan_end_steps_seen": 27636,
+  "max_image_lincnt_by_feed2": {
+    "13128": 4836,
+    "13560": 27476,
+    "13704": 6628,
+    "20232": 3700
+  },
+  "rows": [
+    {
+      "session": "13_ppi_ladder",
+      "file": "13_1200ppi_color.pcapng",
+      "dpi_guess": 1200,
+      "feed1": 28292,
+      "feed2": 13560,
+      "lincnt": 4580,
+      "dpiset": 200,
+      "strpixel": 386,
+      "endpixel": 10610,
+      "span": 10224,
+      "bulk_size": 23412960,
+      "reg02_image": 48,
+      "feedl_at_image": 1,
+      "travel_mm": 24.236,
+      "scan_end_steps": 27300,
+      "image_preamble_count": 6,
+      "feeds_before_image": [
+        {
+          "t": 8.304,
+          "feedl": 28292,
+          "reg02": 24
+        },
+        {
+          "t": 9.375,
+          "feedl": 13560,
+          "reg02": 24
+        },
+        {
+          "t": 33.846,
+          "feedl": 28292,
+          "reg02": 24
+        },
+        {
+          "t": 34.921,
+          "feedl": 13560,
+          "reg02": 24
+        }
+      ]
+    },
+    {
+      "session": "13_ppi_ladder",
+      "file": "13_1440ppi_color.pcapng",
+      "dpi_guess": 1440,
+      "feed1": 28292,
+      "feed2": 13558,
+      "lincnt": 5496,
+      "dpiset": 240,
+      "strpixel": 387,
+      "endpixel": 10607,
+      "span": 10220,
+      "bulk_size": 33701472,
+      "reg02_image": 48,
+      "feedl_at_image": 1,
+      "travel_mm": 24.236,
+      "scan_end_steps": 27298,
+      "image_preamble_count": 6,
+      "feeds_before_image": [
+        {
+          "t": 9.6871,
+          "feedl": 28292,
+          "reg02": 24
+        },
+        {
+          "t": 10.751,
+          "feedl": 13558,
+          "reg02": 24
+        },
+        {
+          "t": 37.8193,
+          "feedl": 28292,
+          "reg02": 24
+        },
+        {
+          "t": 38.8903,
+          "feedl": 13558,
+          "reg02": 24
+        }
+      ]
+    },
+    {
+      "session": "13_ppi_ladder",
+      "file": "13_150ppi_color.pcapng",
+      "dpi_guess": 150,
+      "feed1": 28292,
+      "feed2": 13560,
+      "lincnt": 2292,
+      "dpiset": 100,
+      "strpixel": 386,
+      "endpixel": 10610,
+      "span": 10224,
+      "bulk_size": 5858352,
+      "reg02_image": 48,
+      "feedl_at_image": 1,
+      "travel_mm": 24.257,
+      "scan_end_steps": 27312,
+      "image_preamble_count": 2,
+      "feeds_before_image": [
+        {
+          "t": 8.6991,
+          "feedl": 28292,
+          "reg02": 24
+        },
+        {
+          "t": 9.7641,
+          "feedl": 13560,
+          "reg02": 24
+        },
+        {
+          "t": 27.8369,
+          "feedl": 28292,
+          "reg02": 24
+        },
+        {
+          "t": 28.9099,
+          "feedl": 13560,
+          "reg02": 24
+        }
+      ]
+    },
+    {
+      "session": "13_ppi_ladder",
+      "file": "13_1800ppi_color.pcapng",
+      "dpi_guess": 1800,
+      "feed1": 28292,
+      "feed2": 13560,
+      "lincnt": 6868,
+      "dpiset": 300,
+      "strpixel": 386,
+      "endpixel": 10610,
+      "span": 10224,
+      "bulk_size": 52663824,
+      "reg02_image": 48,
+      "feedl_at_image": 1,
+      "travel_mm": 24.229,
+      "scan_end_steps": 27296,
+      "image_preamble_count": 6,
+      "feeds_before_image": [
+        {
+          "t": 12.9331,
+          "feedl": 28292,
+          "reg02": 24
+        },
+        {
+          "t": 14.0059,
+          "feedl": 13560,
+          "reg02": 24
+        },
+        {
+          "t": 44.9084,
+          "feedl": 28292,
+          "reg02": 24
+        },
+        {
+          "t": 45.9803,
+          "feedl": 13560,
+          "reg02": 24
+        }
+      ]
+    },
+    {
+      "session": "13_ppi_ladder",
+      "file": "13_2400ppi_color.pcapng",
+      "dpi_guess": 2400,
+      "feed1": 28292,
+      "feed2": 13560,
+      "lincnt": 9156,
+      "dpiset": 400,
+      "strpixel": 386,
+      "endpixel": 10610,
+      "span": 10224,
+      "bulk_size": 93610944,
+      "reg02_image": 48,
+      "feedl_at_image": 1,
+      "travel_mm": 24.225,
+      "scan_end_steps": 27294,
+      "image_preamble_count": 6,
+      "feeds_before_image": [
+        {
+          "t": 7.9615,
+          "feedl": 28292,
+          "reg02": 24
+        },
+        {
+          "t": 9.0325,
+          "feedl": 13560,
+          "reg02": 24
+        },
+        {
+          "t": 46.3511,
+          "feedl": 28292,
+          "reg02": 24
+        },
+        {
+          "t": 47.414,
+          "feedl": 13560,
+          "reg02": 24
+        }
+      ]
+    },
+    {
+      "session": "13_ppi_ladder",
+      "file": "13_300ppi_color.pcapng",
+      "dpi_guess": 300,
+      "feed1": 28292,
+      "feed2": 13560,
+      "lincnt": 2292,
+      "dpiset": 100,
+      "strpixel": 386,
+      "endpixel": 10610,
+      "span": 10224,
+      "bulk_size": 5858352,
+      "reg02_image": 48,
+      "feedl_at_image": 1,
+      "travel_mm": 24.257,
+      "scan_end_steps": 27312,
+      "image_preamble_count": 2,
+      "feeds_before_image": [
+        {
+          "t": 9.9265,
+          "feedl": 28292,
+          "reg02": 24
+        },
+        {
+          "t": 11.0032,
+          "feedl": 13560,
+          "reg02": 24
+        },
+        {
+          "t": 29.0892,
+          "feedl": 28292,
+          "reg02": 24
+        },
+        {
+          "t": 30.1603,
+          "feedl": 13560,
+          "reg02": 24
+        }
+      ]
+    },
+    {
+      "session": "13_ppi_ladder",
+      "file": "13_3600ppi_color.pcapng",
+      "dpi_guess": 3600,
+      "feed1": 28292,
+      "feed2": 13560,
+      "lincnt": 13732,
+      "dpiset": 600,
+      "strpixel": 386,
+      "endpixel": 10610,
+      "span": 10224,
+      "bulk_size": 210593952,
+      "reg02_image": 48,
+      "feedl_at_image": 1,
+      "travel_mm": 24.222,
+      "scan_end_steps": 27292,
+      "image_preamble_count": 6,
+      "feeds_before_image": [
+        {
+          "t": 9.8211,
+          "feedl": 28292,
+          "reg02": 24
+        },
+        {
+          "t": 10.8831,
+          "feedl": 13560,
+          "reg02": 24
+        },
+        {
+          "t": 62.4455,
+          "feedl": 28292,
+          "reg02": 24
+        },
+        {
+          "t": 63.5082,
+          "feedl": 13560,
+          "reg02": 24
+        }
+      ]
+    },
+    {
+      "session": "13_ppi_ladder",
+      "file": "13_600ppi_color.pcapng",
+      "dpi_guess": 600,
+      "feed1": 28292,
+      "feed2": 13560,
+      "lincnt": 2292,
+      "dpiset": 100,
+      "strpixel": 386,
+      "endpixel": 10610,
+      "span": 10224,
+      "bulk_size": 5858352,
+      "reg02_image": 48,
+      "feedl_at_image": 1,
+      "travel_mm": 24.257,
+      "scan_end_steps": 27312,
+      "image_preamble_count": 2,
+      "feeds_before_image": [
+        {
+          "t": 8.742,
+          "feedl": 28292,
+          "reg02": 24
+        },
+        {
+          "t": 9.8169,
+          "feedl": 13560,
+          "reg02": 24
+        },
+        {
+          "t": 27.8939,
+          "feedl": 28292,
+          "reg02": 24
+        },
+        {
+          "t": 28.9637,
+          "feedl": 13560,
+          "reg02": 24
+        }
+      ]
+    },
+    {
+      "session": "13_ppi_ladder",
+      "file": "13_7200ppi_color.pcapng",
+      "dpi_guess": 7200,
+      "feed1": 28292,
+      "feed2": 13560,
+      "lincnt": 27476,
+      "dpiset": 1200,
+      "strpixel": 386,
+      "endpixel": 10610,
+      "span": 10224,
+      "bulk_size": 842743872,
+      "reg02_image": 48,
+      "feedl_at_image": 1,
+      "travel_mm": 24.232,
+      "scan_end_steps": 27298,
+      "image_preamble_count": 6,
+      "feeds_before_image": [
+        {
+          "t": 11.9174,
+          "feedl": 28292,
+          "reg02": 24
+        },
+        {
+          "t": 12.9945,
+          "feedl": 13560,
+          "reg02": 24
+        },
+        {
+          "t": 181.4315,
+          "feedl": 28292,
+          "reg02": 24
+        },
+        {
+          "t": 182.5056,
+          "feedl": 13560,
+          "reg02": 24
+        }
+      ]
+    },
+    {
+      "session": "13_ppi_ladder",
+      "file": "13_720ppi_color.pcapng",
+      "dpi_guess": 720,
+      "feed1": 28292,
+      "feed2": 13548,
+      "lincnt": 2748,
+      "dpiset": 120,
+      "strpixel": 382,
+      "endpixel": 10602,
+      "span": 10220,
+      "bulk_size": 8425368,
+      "reg02_image": 48,
+      "feedl_at_image": 1,
+      "travel_mm": 24.236,
+      "scan_end_steps": 27288,
+      "image_preamble_count": 2,
+      "feeds_before_image": [
+        {
+          "t": 8.2193,
+          "feedl": 28292,
+          "reg02": 24
+        },
+        {
+          "t": 9.2962,
+          "feedl": 13548,
+          "reg02": 24
+        },
+        {
+          "t": 28.6562,
+          "feedl": 28292,
+          "reg02": 24
+        },
+        {
+          "t": 29.7272,
+          "feedl": 13548,
+          "reg02": 24
+        }
+      ]
+    },
+    {
+      "session": "13_ppi_ladder",
+      "file": "13_900ppi_color.pcapng",
+      "dpi_guess": 900,
+      "feed1": 28292,
+      "feed2": 13560,
+      "lincnt": 3436,
+      "dpiset": 150,
+      "strpixel": 386,
+      "endpixel": 10610,
+      "span": 10224,
+      "bulk_size": 13173624,
+      "reg02_image": 48,
+      "feedl_at_image": 1,
+      "travel_mm": 24.243,
+      "scan_end_steps": 27304,
+      "image_preamble_count": 2,
+      "feeds_before_image": [
+        {
+          "t": 8.8922,
+          "feedl": 28292,
+          "reg02": 24
+        },
+        {
+          "t": 9.9521,
+          "feedl": 13560,
+          "reg02": 24
+        },
+        {
+          "t": 31.1771,
+          "feedl": 28292,
+          "reg02": 24
+        },
+        {
+          "t": 32.2482,
+          "feedl": 13560,
+          "reg02": 24
+        }
+      ]
+    },
+    {
+      "session": "03_home_or_preview",
+      "file": "03_home_or_preview.pcapng",
+      "dpi_guess": 1200,
+      "feed1": 28292,
+      "feed2": 13128,
+      "lincnt": 4836,
+      "dpiset": 200,
+      "strpixel": 242,
+      "endpixel": 10610,
+      "span": 10368,
+      "bulk_size": 25069824,
+      "reg02_image": 48,
+      "feedl_at_image": 1,
+      "travel_mm": 25.59,
+      "scan_end_steps": 27636,
+      "image_preamble_count": 3,
+      "feeds_before_image": [
+        {
+          "t": 8.9847,
+          "feedl": 28292,
+          "reg02": 24
+        },
+        {
+          "t": 10.1106,
+          "feedl": 13128,
+          "reg02": 24
+        }
+      ]
+    },
+    {
+      "session": "04_color_1800",
+      "file": "04_color_1800.pcapng",
+      "dpi_guess": 1800,
+      "feed1": 28292,
+      "feed2": 13704,
+      "lincnt": 6628,
+      "dpiset": 300,
+      "strpixel": 578,
+      "endpixel": 10490,
+      "span": 9912,
+      "bulk_size": 49272552,
+      "reg02_image": 48,
+      "feedl_at_image": 1,
+      "travel_mm": 23.382,
+      "scan_end_steps": 26960,
+      "image_preamble_count": 3,
+      "feeds_before_image": [
+        {
+          "t": 8.1832,
+          "feedl": 28292,
+          "reg02": 24
+        },
+        {
+          "t": 9.2522,
+          "feedl": 13704,
+          "reg02": 24
+        }
+      ]
+    },
+    {
+      "session": "09_y_crop_pair",
+      "file": "09a_crop_top_1800.pcapng",
+      "dpi_guess": 1800,
+      "feed1": 28292,
+      "feed2": 13128,
+      "lincnt": 3700,
+      "dpiset": 300,
+      "strpixel": 266,
+      "endpixel": 10610,
+      "span": 10344,
+      "bulk_size": 28704600,
+      "reg02_image": 48,
+      "feedl_at_image": 1,
+      "travel_mm": 13.053,
+      "scan_end_steps": 20528,
+      "image_preamble_count": 6,
+      "feeds_before_image": [
+        {
+          "t": 10.8028,
+          "feedl": 28292,
+          "reg02": 24
+        },
+        {
+          "t": 11.8676,
+          "feedl": 13128,
+          "reg02": 24
+        },
+        {
+          "t": 33.3395,
+          "feedl": 28292,
+          "reg02": 24
+        },
+        {
+          "t": 34.4025,
+          "feedl": 13128,
+          "reg02": 24
+        }
+      ]
+    },
+    {
+      "session": "09_y_crop_pair",
+      "file": "09b_crop_bottom_1800.pcapng",
+      "dpi_guess": 1800,
+      "feed1": 28292,
+      "feed2": 20232,
+      "lincnt": 3700,
+      "dpiset": 300,
+      "strpixel": 242,
+      "endpixel": 10586,
+      "span": 10344,
+      "bulk_size": 28704600,
+      "reg02_image": 48,
+      "feedl_at_image": 1,
+      "travel_mm": 13.053,
+      "scan_end_steps": 27632,
+      "image_preamble_count": 6,
+      "feeds_before_image": [
+        {
+          "t": 10.6597,
+          "feedl": 28292,
+          "reg02": 24
+        },
+        {
+          "t": 11.7199,
+          "feedl": 20232,
+          "reg02": 24
+        },
+        {
+          "t": 34.3718,
+          "feedl": 28292,
+          "reg02": 24
+        },
+        {
+          "t": 35.4429,
+          "feedl": 20232,
+          "reg02": 24
+        }
+      ]
+    }
+  ]
+}

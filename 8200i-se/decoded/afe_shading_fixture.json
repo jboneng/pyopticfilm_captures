@@ -1,0 +1,158 @@
+{
+  "description": "Compact capture-derived AFE/shading fixtures for OpticFilm 8200i SE (offline Step 1). Session 05 adds IR-pass finals.",
+  "sources": {
+    "03": "captures/8200i-se/03_home_or_preview/03_home_or_preview.pcapng",
+    "04": "captures/8200i-se/04_color_1800/04_color_1800.pcapng",
+    "05": "captures/8200i-se/05_ir_1800/05_ir_1800.pcapng"
+  },
+  "constants": {
+    "afe_strip_bytes": 3072,
+    "afe_wide_bytes": 62268,
+    "afe_strip_pixels": 512,
+    "afe_channels": 3,
+    "afe_depth_bits": 16,
+    "shading_ahb_addr": "0x10014000",
+    "shading_record_bytes": 12,
+    "shading_unity_white": 8192,
+    "fe_offset_r": 2,
+    "fe_offset_g": 3,
+    "fe_offset_b": 4,
+    "fe_gain_r": 5,
+    "fe_gain_g": 6,
+    "fe_gain_b": 7,
+    "ir_afe_fallback_offsets": [
+      6,
+      16,
+      12
+    ],
+    "ir_afe_fallback_gains": [
+      48,
+      41,
+      49
+    ]
+  },
+  "session_03": {
+    "fe_write_count": 52,
+    "strip_sizes": [
+      3072,
+      62268
+    ],
+    "afe_final": {
+      "offsets": [
+        38,
+        30,
+        37
+      ],
+      "gains": [
+        18,
+        30,
+        23
+      ]
+    },
+    "shading_uploads": [
+      {
+        "t": 7.4157,
+        "declared_size": 21064,
+        "n_entries_parsed": 1749,
+        "expected_entries_from_declared": 1755,
+        "first": {
+          "dark": [
+            907,
+            1029,
+            1196
+          ],
+          "white": [
+            8192,
+            8192,
+            8192
+          ]
+        }
+      },
+      {
+        "t": 8.5487,
+        "declared_size": 21064,
+        "n_entries_parsed": 1749,
+        "expected_entries_from_declared": 1755,
+        "first": {
+          "dark": [
+            907,
+            1029,
+            1196
+          ],
+          "white": [
+            13109,
+            11720,
+            11492
+          ]
+        }
+      }
+    ]
+  },
+  "session_04": {
+    "fe_write_count": 52,
+    "afe_final": {
+      "offsets": [
+        38,
+        30,
+        36
+      ],
+      "gains": [
+        19,
+        31,
+        23
+      ]
+    },
+    "shading_declared_size": 30208,
+    "shading_n_entries_parsed": 2517,
+    "expected_entries_from_declared": 2517,
+    "first_upload_unity_white": true,
+    "second_upload_first": {
+      "dark": [
+        927,
+        1039,
+        1171
+      ],
+      "white": [
+        12366,
+        11093,
+        11154
+      ]
+    }
+  },
+  "session_05_ir": {
+    "fe_write_count": 98,
+    "afe_final_ir_pass": {
+      "offsets": [
+        6,
+        16,
+        12
+      ],
+      "gains": [
+        45,
+        39,
+        36
+      ]
+    },
+    "shading_measured_last": {
+      "t": 42.395,
+      "declared_size": 30208,
+      "n_entries_parsed": 2517,
+      "first": {
+        "dark": [
+          0,
+          0,
+          0
+        ],
+        "white": [
+          13027,
+          12901,
+          12878
+        ]
+      },
+      "dark_all_zero": true,
+      "white_spread": 149
+    },
+    "shading_upload_count": 4,
+    "measured_shading_upload_count": 4
+  }
+}

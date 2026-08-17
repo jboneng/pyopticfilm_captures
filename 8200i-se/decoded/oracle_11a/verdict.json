@@ -1,0 +1,39 @@
+{
+  "pcap": "C:\\Users\\jbone\\Desktop\\PlustekLib\\captures\\8200i-se\\11_bit_depth_1800\\11a_color_1800_24bit.pcapng",
+  "preamble": {
+    "frame": 4587,
+    "t": 14.018002,
+    "w_index": 8,
+    "bulk_addr": 268435456,
+    "bulk_size": 15705144
+  },
+  "geometry": {
+    "dpi": 1800,
+    "strpixel": 1418,
+    "endpixel": 7970,
+    "lincnt": 3196,
+    "depth": 8,
+    "channels": 3,
+    "width": 1638,
+    "oversample": 4,
+    "line_bytes_8bit_formula": 4914,
+    "total_bytes": 15705144,
+    "lincnt_lines_carved": 3196,
+    "bytes_carved": 15705144
+  },
+  "scores": {
+    "chunky8": -0.3023451864719391,
+    "planar8": -0.8361888527870178,
+    "chunky16": 0.9934921264648438,
+    "planar16": 0.5965696573257446
+  },
+  "winner": "chunky16",
+  "usb_depth": 16,
+  "usb_planar_rgb": false,
+  "usb_lines": 1598,
+  "note": "Session 11 programs DEPTH8 regs (0x33=0x1F, 0xAF=0xFF) and sizes bulk as LINCNT\u00d7width\u00d73, but the wire format that yields a real image is 16-bit little-endian chunky RGB with LINCNT/2 lines.",
+  "files": {
+    "raw": "C:\\Users\\jbone\\Desktop\\PlustekLib\\captures\\8200i-se\\decoded\\oracle_11a\\raw.bin",
+    "winner_png": "C:\\Users\\jbone\\Desktop\\PlustekLib\\captures\\8200i-se\\decoded\\oracle_11a\\chunky16.png"
+  }
+}

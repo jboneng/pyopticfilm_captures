@@ -1,0 +1,739 @@
+{
+  "03_home_or_preview": {
+    "pcap": "03_home_or_preview.pcapng",
+    "n_events": 6113,
+    "n_ops": 6738,
+    "shading_uploads": [
+      {
+        "t": 7.4157,
+        "size": 21064,
+        "n": 1755
+      },
+      {
+        "t": 8.5487,
+        "size": 21064,
+        "n": 1755
+      }
+    ],
+    "unique_0x01": [
+      "0x02 (SHDAREA)",
+      "0x03 (SCAN|SHDAREA)",
+      "0x22 (SHDAREA|DVDSET)",
+      "0x23 (SCAN|SHDAREA|DVDSET)"
+    ],
+    "unique_0x02": [
+      "0x00 (0)",
+      "0x08 (FASTFED)",
+      "0x10 (MTRPWR)",
+      "0x18 (FASTFED|MTRPWR)",
+      "0x30 (MTRPWR|AGOHOME)",
+      "0x78 (FASTFED|MTRPWR|AGOHOME|other=0x40)"
+    ],
+    "measure_strips": [
+      {
+        "t": 6.6974,
+        "size": 1327104,
+        "class": "shade_measure(w=1728)",
+        "after_upload_idx": null,
+        "after_upload_t": null,
+        "start_0x01": {
+          "t": 6.6526,
+          "val": "0x03",
+          "bits": "SCAN|SHDAREA",
+          "dvdset": false
+        },
+        "motor_0x02": {
+          "t": 6.6126,
+          "val": "0x00",
+          "bits": "0",
+          "mtrpwr": false,
+          "agohome": false
+        },
+        "clocks": {
+          "0x2B": "0x04",
+          "0xA5": "0x01",
+          "0xAB": null
+        }
+      },
+      {
+        "t": 7.7185,
+        "size": 1327104,
+        "class": "shade_measure(w=1728)",
+        "after_upload_idx": 0,
+        "after_upload_t": 7.4157,
+        "start_0x01": {
+          "t": 7.6696,
+          "val": "0x23",
+          "bits": "SCAN|SHDAREA|DVDSET",
+          "dvdset": true
+        },
+        "motor_0x02": {
+          "t": 7.6537,
+          "val": "0x10",
+          "bits": "MTRPWR",
+          "mtrpwr": true,
+          "agohome": false
+        },
+        "clocks": {
+          "0x2B": "0x02",
+          "0xA5": "0x02",
+          "0xAB": "0x02"
+        }
+      }
+    ],
+    "upload_phases": [
+      {
+        "upload_idx": 0,
+        "upload_t": 7.4157,
+        "upload_size": 21064,
+        "n": 1755,
+        "measure_before": {
+          "t": 6.6974,
+          "size": 1327104,
+          "class": "shade_measure(w=1728)",
+          "after_upload_idx": null,
+          "after_upload_t": null,
+          "start_0x01": {
+            "t": 6.6526,
+            "val": "0x03",
+            "bits": "SCAN|SHDAREA",
+            "dvdset": false
+          },
+          "motor_0x02": {
+            "t": 6.6126,
+            "val": "0x00",
+            "bits": "0",
+            "mtrpwr": false,
+            "agohome": false
+          },
+          "clocks": {
+            "0x2B": "0x04",
+            "0xA5": "0x01",
+            "0xAB": null
+          }
+        },
+        "measure_after": {
+          "t": 7.7185,
+          "size": 1327104,
+          "class": "shade_measure(w=1728)",
+          "after_upload_idx": 0,
+          "after_upload_t": 7.4157,
+          "start_0x01": {
+            "t": 7.6696,
+            "val": "0x23",
+            "bits": "SCAN|SHDAREA|DVDSET",
+            "dvdset": true
+          },
+          "motor_0x02": {
+            "t": 7.6537,
+            "val": "0x10",
+            "bits": "MTRPWR",
+            "mtrpwr": true,
+            "agohome": false
+          },
+          "clocks": {
+            "0x2B": "0x02",
+            "0xA5": "0x02",
+            "0xAB": "0x02"
+          }
+        }
+      },
+      {
+        "upload_idx": 1,
+        "upload_t": 8.5487,
+        "upload_size": 21064,
+        "n": 1755,
+        "measure_before": {
+          "t": 7.7185,
+          "size": 1327104,
+          "class": "shade_measure(w=1728)",
+          "after_upload_idx": 0,
+          "after_upload_t": 7.4157,
+          "start_0x01": {
+            "t": 7.6696,
+            "val": "0x23",
+            "bits": "SCAN|SHDAREA|DVDSET",
+            "dvdset": true
+          },
+          "motor_0x02": {
+            "t": 7.6537,
+            "val": "0x10",
+            "bits": "MTRPWR",
+            "mtrpwr": true,
+            "agohome": false
+          },
+          "clocks": {
+            "0x2B": "0x02",
+            "0xA5": "0x02",
+            "0xAB": "0x02"
+          }
+        },
+        "measure_after": null
+      }
+    ],
+    "image_arms_DVDSET_SCAN": [
+      {
+        "t": 7.6696,
+        "val": "0x23",
+        "bits": "SCAN|SHDAREA|DVDSET"
+      },
+      {
+        "t": 11.4168,
+        "val": "0x23",
+        "bits": "SCAN|SHDAREA|DVDSET"
+      }
+    ]
+  },
+  "04_color_1800": {
+    "pcap": "04_color_1800.pcapng",
+    "n_events": 9182,
+    "n_ops": 9807,
+    "shading_uploads": [
+      {
+        "t": 6.6144,
+        "size": 30208,
+        "n": 2517
+      },
+      {
+        "t": 7.758,
+        "size": 30208,
+        "n": 2517
+      }
+    ],
+    "unique_0x01": [
+      "0x02 (SHDAREA)",
+      "0x03 (SCAN|SHDAREA)",
+      "0x22 (SHDAREA|DVDSET)",
+      "0x23 (SCAN|SHDAREA|DVDSET)"
+    ],
+    "unique_0x02": [
+      "0x00 (0)",
+      "0x08 (FASTFED)",
+      "0x10 (MTRPWR)",
+      "0x18 (FASTFED|MTRPWR)",
+      "0x30 (MTRPWR|AGOHOME)",
+      "0x78 (FASTFED|MTRPWR|AGOHOME|other=0x40)"
+    ],
+    "measure_strips": [
+      {
+        "t": 5.8945,
+        "size": 1903104,
+        "class": "shade_measure(w=2478)",
+        "after_upload_idx": null,
+        "after_upload_t": null,
+        "start_0x01": {
+          "t": 5.8501,
+          "val": "0x03",
+          "bits": "SCAN|SHDAREA",
+          "dvdset": false
+        },
+        "motor_0x02": {
+          "t": 5.8101,
+          "val": "0x00",
+          "bits": "0",
+          "mtrpwr": false,
+          "agohome": false
+        },
+        "clocks": {
+          "0x2B": "0x06",
+          "0xA5": "0x01",
+          "0xAB": null
+        }
+      },
+      {
+        "t": 6.9249,
+        "size": 1903104,
+        "class": "shade_measure(w=2478)",
+        "after_upload_idx": 0,
+        "after_upload_t": 6.6144,
+        "start_0x01": {
+          "t": 6.8801,
+          "val": "0x23",
+          "bits": "SCAN|SHDAREA|DVDSET",
+          "dvdset": true
+        },
+        "motor_0x02": {
+          "t": 6.8642,
+          "val": "0x10",
+          "bits": "MTRPWR",
+          "mtrpwr": true,
+          "agohome": false
+        },
+        "clocks": {
+          "0x2B": "0x02",
+          "0xA5": "0x02",
+          "0xAB": "0x02"
+        }
+      }
+    ],
+    "upload_phases": [
+      {
+        "upload_idx": 0,
+        "upload_t": 6.6144,
+        "upload_size": 30208,
+        "n": 2517,
+        "measure_before": {
+          "t": 5.8945,
+          "size": 1903104,
+          "class": "shade_measure(w=2478)",
+          "after_upload_idx": null,
+          "after_upload_t": null,
+          "start_0x01": {
+            "t": 5.8501,
+            "val": "0x03",
+            "bits": "SCAN|SHDAREA",
+            "dvdset": false
+          },
+          "motor_0x02": {
+            "t": 5.8101,
+            "val": "0x00",
+            "bits": "0",
+            "mtrpwr": false,
+            "agohome": false
+          },
+          "clocks": {
+            "0x2B": "0x06",
+            "0xA5": "0x01",
+            "0xAB": null
+          }
+        },
+        "measure_after": {
+          "t": 6.9249,
+          "size": 1903104,
+          "class": "shade_measure(w=2478)",
+          "after_upload_idx": 0,
+          "after_upload_t": 6.6144,
+          "start_0x01": {
+            "t": 6.8801,
+            "val": "0x23",
+            "bits": "SCAN|SHDAREA|DVDSET",
+            "dvdset": true
+          },
+          "motor_0x02": {
+            "t": 6.8642,
+            "val": "0x10",
+            "bits": "MTRPWR",
+            "mtrpwr": true,
+            "agohome": false
+          },
+          "clocks": {
+            "0x2B": "0x02",
+            "0xA5": "0x02",
+            "0xAB": "0x02"
+          }
+        }
+      },
+      {
+        "upload_idx": 1,
+        "upload_t": 7.758,
+        "upload_size": 30208,
+        "n": 2517,
+        "measure_before": {
+          "t": 6.9249,
+          "size": 1903104,
+          "class": "shade_measure(w=2478)",
+          "after_upload_idx": 0,
+          "after_upload_t": 6.6144,
+          "start_0x01": {
+            "t": 6.8801,
+            "val": "0x23",
+            "bits": "SCAN|SHDAREA|DVDSET",
+            "dvdset": true
+          },
+          "motor_0x02": {
+            "t": 6.8642,
+            "val": "0x10",
+            "bits": "MTRPWR",
+            "mtrpwr": true,
+            "agohome": false
+          },
+          "clocks": {
+            "0x2B": "0x02",
+            "0xA5": "0x02",
+            "0xAB": "0x02"
+          }
+        },
+        "measure_after": null
+      }
+    ],
+    "image_arms_DVDSET_SCAN": [
+      {
+        "t": 6.8801,
+        "val": "0x23",
+        "bits": "SCAN|SHDAREA|DVDSET"
+      },
+      {
+        "t": 10.6113,
+        "val": "0x23",
+        "bits": "SCAN|SHDAREA|DVDSET"
+      }
+    ]
+  },
+  "05_ir_1800": {
+    "pcap": "05_ir_1800.pcapng",
+    "n_events": 18364,
+    "n_ops": 19605,
+    "shading_uploads": [
+      {
+        "t": 9.9545,
+        "size": 30208,
+        "n": 2517
+      },
+      {
+        "t": 11.0946,
+        "size": 30208,
+        "n": 2517
+      },
+      {
+        "t": 41.262,
+        "size": 30208,
+        "n": 2517
+      },
+      {
+        "t": 42.395,
+        "size": 30208,
+        "n": 2517
+      }
+    ],
+    "unique_0x01": [
+      "0x02 (SHDAREA)",
+      "0x03 (SCAN|SHDAREA)",
+      "0x22 (SHDAREA|DVDSET)",
+      "0x23 (SCAN|SHDAREA|DVDSET)"
+    ],
+    "unique_0x02": [
+      "0x00 (0)",
+      "0x08 (FASTFED)",
+      "0x10 (MTRPWR)",
+      "0x18 (FASTFED|MTRPWR)",
+      "0x30 (MTRPWR|AGOHOME)",
+      "0x78 (FASTFED|MTRPWR|AGOHOME|other=0x40)"
+    ],
+    "measure_strips": [
+      {
+        "t": 9.2363,
+        "size": 1903104,
+        "class": "shade_measure(w=2478)",
+        "after_upload_idx": null,
+        "after_upload_t": null,
+        "start_0x01": {
+          "t": 9.1943,
+          "val": "0x03",
+          "bits": "SCAN|SHDAREA",
+          "dvdset": false
+        },
+        "motor_0x02": {
+          "t": 9.1525,
+          "val": "0x00",
+          "bits": "0",
+          "mtrpwr": false,
+          "agohome": false
+        },
+        "clocks": {
+          "0x2B": "0x06",
+          "0xA5": "0x01",
+          "0xAB": null
+        }
+      },
+      {
+        "t": 10.2683,
+        "size": 1903104,
+        "class": "shade_measure(w=2478)",
+        "after_upload_idx": 0,
+        "after_upload_t": 9.9545,
+        "start_0x01": {
+          "t": 10.2204,
+          "val": "0x23",
+          "bits": "SCAN|SHDAREA|DVDSET",
+          "dvdset": true
+        },
+        "motor_0x02": {
+          "t": 10.2038,
+          "val": "0x10",
+          "bits": "MTRPWR",
+          "mtrpwr": true,
+          "agohome": false
+        },
+        "clocks": {
+          "0x2B": "0x02",
+          "0xA5": "0x02",
+          "0xAB": "0x02"
+        }
+      },
+      {
+        "t": 40.5467,
+        "size": 1903104,
+        "class": "shade_measure(w=2478)",
+        "after_upload_idx": 1,
+        "after_upload_t": 11.0946,
+        "start_0x01": {
+          "t": 40.4998,
+          "val": "0x03",
+          "bits": "SCAN|SHDAREA",
+          "dvdset": false
+        },
+        "motor_0x02": {
+          "t": 40.4829,
+          "val": "0x00",
+          "bits": "0",
+          "mtrpwr": false,
+          "agohome": false
+        },
+        "clocks": {
+          "0x2B": "0x06",
+          "0xA5": "0x01",
+          "0xAB": null
+        }
+      },
+      {
+        "t": 41.5648,
+        "size": 1903104,
+        "class": "shade_measure(w=2478)",
+        "after_upload_idx": 2,
+        "after_upload_t": 41.262,
+        "start_0x01": {
+          "t": 41.5208,
+          "val": "0x23",
+          "bits": "SCAN|SHDAREA|DVDSET",
+          "dvdset": true
+        },
+        "motor_0x02": {
+          "t": 41.5042,
+          "val": "0x10",
+          "bits": "MTRPWR",
+          "mtrpwr": true,
+          "agohome": false
+        },
+        "clocks": {
+          "0x2B": "0x02",
+          "0xA5": "0x02",
+          "0xAB": "0x02"
+        }
+      }
+    ],
+    "upload_phases": [
+      {
+        "upload_idx": 0,
+        "upload_t": 9.9545,
+        "upload_size": 30208,
+        "n": 2517,
+        "measure_before": {
+          "t": 9.2363,
+          "size": 1903104,
+          "class": "shade_measure(w=2478)",
+          "after_upload_idx": null,
+          "after_upload_t": null,
+          "start_0x01": {
+            "t": 9.1943,
+            "val": "0x03",
+            "bits": "SCAN|SHDAREA",
+            "dvdset": false
+          },
+          "motor_0x02": {
+            "t": 9.1525,
+            "val": "0x00",
+            "bits": "0",
+            "mtrpwr": false,
+            "agohome": false
+          },
+          "clocks": {
+            "0x2B": "0x06",
+            "0xA5": "0x01",
+            "0xAB": null
+          }
+        },
+        "measure_after": {
+          "t": 10.2683,
+          "size": 1903104,
+          "class": "shade_measure(w=2478)",
+          "after_upload_idx": 0,
+          "after_upload_t": 9.9545,
+          "start_0x01": {
+            "t": 10.2204,
+            "val": "0x23",
+            "bits": "SCAN|SHDAREA|DVDSET",
+            "dvdset": true
+          },
+          "motor_0x02": {
+            "t": 10.2038,
+            "val": "0x10",
+            "bits": "MTRPWR",
+            "mtrpwr": true,
+            "agohome": false
+          },
+          "clocks": {
+            "0x2B": "0x02",
+            "0xA5": "0x02",
+            "0xAB": "0x02"
+          }
+        }
+      },
+      {
+        "upload_idx": 1,
+        "upload_t": 11.0946,
+        "upload_size": 30208,
+        "n": 2517,
+        "measure_before": {
+          "t": 10.2683,
+          "size": 1903104,
+          "class": "shade_measure(w=2478)",
+          "after_upload_idx": 0,
+          "after_upload_t": 9.9545,
+          "start_0x01": {
+            "t": 10.2204,
+            "val": "0x23",
+            "bits": "SCAN|SHDAREA|DVDSET",
+            "dvdset": true
+          },
+          "motor_0x02": {
+            "t": 10.2038,
+            "val": "0x10",
+            "bits": "MTRPWR",
+            "mtrpwr": true,
+            "agohome": false
+          },
+          "clocks": {
+            "0x2B": "0x02",
+            "0xA5": "0x02",
+            "0xAB": "0x02"
+          }
+        },
+        "measure_after": {
+          "t": 40.5467,
+          "size": 1903104,
+          "class": "shade_measure(w=2478)",
+          "after_upload_idx": 1,
+          "after_upload_t": 11.0946,
+          "start_0x01": {
+            "t": 40.4998,
+            "val": "0x03",
+            "bits": "SCAN|SHDAREA",
+            "dvdset": false
+          },
+          "motor_0x02": {
+            "t": 40.4829,
+            "val": "0x00",
+            "bits": "0",
+            "mtrpwr": false,
+            "agohome": false
+          },
+          "clocks": {
+            "0x2B": "0x06",
+            "0xA5": "0x01",
+            "0xAB": null
+          }
+        }
+      },
+      {
+        "upload_idx": 2,
+        "upload_t": 41.262,
+        "upload_size": 30208,
+        "n": 2517,
+        "measure_before": {
+          "t": 40.5467,
+          "size": 1903104,
+          "class": "shade_measure(w=2478)",
+          "after_upload_idx": 1,
+          "after_upload_t": 11.0946,
+          "start_0x01": {
+            "t": 40.4998,
+            "val": "0x03",
+            "bits": "SCAN|SHDAREA",
+            "dvdset": false
+          },
+          "motor_0x02": {
+            "t": 40.4829,
+            "val": "0x00",
+            "bits": "0",
+            "mtrpwr": false,
+            "agohome": false
+          },
+          "clocks": {
+            "0x2B": "0x06",
+            "0xA5": "0x01",
+            "0xAB": null
+          }
+        },
+        "measure_after": {
+          "t": 41.5648,
+          "size": 1903104,
+          "class": "shade_measure(w=2478)",
+          "after_upload_idx": 2,
+          "after_upload_t": 41.262,
+          "start_0x01": {
+            "t": 41.5208,
+            "val": "0x23",
+            "bits": "SCAN|SHDAREA|DVDSET",
+            "dvdset": true
+          },
+          "motor_0x02": {
+            "t": 41.5042,
+            "val": "0x10",
+            "bits": "MTRPWR",
+            "mtrpwr": true,
+            "agohome": false
+          },
+          "clocks": {
+            "0x2B": "0x02",
+            "0xA5": "0x02",
+            "0xAB": "0x02"
+          }
+        }
+      },
+      {
+        "upload_idx": 3,
+        "upload_t": 42.395,
+        "upload_size": 30208,
+        "n": 2517,
+        "measure_before": {
+          "t": 41.5648,
+          "size": 1903104,
+          "class": "shade_measure(w=2478)",
+          "after_upload_idx": 2,
+          "after_upload_t": 41.262,
+          "start_0x01": {
+            "t": 41.5208,
+            "val": "0x23",
+            "bits": "SCAN|SHDAREA|DVDSET",
+            "dvdset": true
+          },
+          "motor_0x02": {
+            "t": 41.5042,
+            "val": "0x10",
+            "bits": "MTRPWR",
+            "mtrpwr": true,
+            "agohome": false
+          },
+          "clocks": {
+            "0x2B": "0x02",
+            "0xA5": "0x02",
+            "0xAB": "0x02"
+          }
+        },
+        "measure_after": null
+      }
+    ],
+    "image_arms_DVDSET_SCAN": [
+      {
+        "t": 10.2204,
+        "val": "0x23",
+        "bits": "SCAN|SHDAREA|DVDSET"
+      },
+      {
+        "t": 13.9475,
+        "val": "0x23",
+        "bits": "SCAN|SHDAREA|DVDSET"
+      },
+      {
+        "t": 41.5208,
+        "val": "0x23",
+        "bits": "SCAN|SHDAREA|DVDSET"
+      },
+      {
+        "t": 45.2191,
+        "val": "0x23",
+        "bits": "SCAN|SHDAREA|DVDSET"
+      }
+    ]
+  }
+}

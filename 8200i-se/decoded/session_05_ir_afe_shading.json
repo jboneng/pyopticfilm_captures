@@ -1,0 +1,36 @@
+{
+  "fe_write_count": 98,
+  "afe_final_ir_pass": {
+    "offsets": [
+      6,
+      16,
+      12
+    ],
+    "gains": [
+      45,
+      39,
+      36
+    ]
+  },
+  "shading_measured_last": {
+    "t": 42.395,
+    "declared_size": 30208,
+    "n_entries_parsed": 2517,
+    "first": {
+      "dark": [
+        0,
+        0,
+        0
+      ],
+      "white": [
+        13027,
+        12901,
+        12878
+      ]
+    },
+    "dark_all_zero": true,
+    "white_spread": 149
+  },
+  "shading_upload_count": 4,
+  "measured_shading_upload_count": 4
+}
