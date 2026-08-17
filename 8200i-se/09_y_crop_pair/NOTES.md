@@ -30,7 +30,7 @@ scans or a double pass in the UI; FEEDL pattern is identical within each file.
 - Session 04 full-ish scan used feed 2 = **13704** (between these two).
 - Session 03 / 08 preview used **13128** (same as this top crop).
 
-So plusteklib must **not** hardcode only `13704` forever; positioning is:
+So pyopticfilm must **not** hardcode only `13704` forever; positioning is:
 
 ```text
 feed(28292)           # reference, always
@@ -55,7 +55,7 @@ Horizontal span identical; slight STR/END shift (user may have nudged X). Same
 output line count → same crop height, different Y origin — exactly what we
 wanted.
 
-## Implications for plusteklib
+## Implications for pyopticfilm
 
 - Keep `feed_to_reference_steps = 28292`.
 - Replace single `feed_to_scan_steps = 13704` with a crop/Y-derived value (or

@@ -39,7 +39,7 @@ Image geometry (both): `DPISET=300` (= 1800/6), `LINCNT=3196`,
   ``(LINCNT/2) × width × 6``). Treating the same bytes as 8-bit is rainbow noise.
 - SilverFast **48 Bit HDR RAW** uses the same USB image path as **48 → 24 Bit**.
 
-## Implications for plusteklib
+## Implications for pyopticfilm
 
 - Program image depth regs as capture does (`0x33=0x1F`, `0xAF=0xFF`).
 - Decode / allocate with **`usb_image_depth=16`**, chunky layout, and

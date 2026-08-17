@@ -16,10 +16,10 @@ writes, 7 register reads, 2 AHB bulk writes and 28 status probes.
 
 ---
 
-## Checklist item B — framing **confirmed compatible with PlustekLib**
+## Checklist item B — framing **confirmed compatible with pyopticfilm**
 
-The SE speaks the same Genesys vendor-request framing that
-`plusteklib/usb/protocol.py` already implements. Verified point by point:
+The SE speaks the same Genesys vendor-request framing that pyopticfilm's USB
+protocol layer implements. Verified point by point:
 
 | Operation | Observed | Matches `GenesysUsbProtocol` |
 |-----------|----------|------------------------------|
@@ -37,7 +37,7 @@ The SE speaks the same Genesys vendor-request framing that
 ### Difference 1 — writes are batched
 
 The vendor packs **many `(addr, value)` pairs into a single 64-byte transfer**;
-PlustekLib's `write_registers()` issues one transfer per register. Functionally
+pyopticfilm's `write_registers()` issues one transfer per register. Functionally
 equivalent, but far fewer round trips. Worth mirroring for the SE init blast.
 
 ### Difference 2 — frontend uses the **GL124** path, not GL845
@@ -47,7 +47,7 @@ equivalent, but far fewer round trips. Worth mirroring for the SE init blast.
 
 **`GenesysUsbProtocol.write_fe_register()` must not be reused for the SE** — it
 writes `0x51` + `0x3a`/`0x3b`. This needs an SE-specific frontend path, exactly as
-`docs/ai-handover-se-bringup.md` step 2 anticipated. Do not mutate the GL845 path.
+pyopticfilm's GL128 bring-up anticipated this. Do not mutate the GL845 path.
 
 ### Difference 3 — a `wIndex`-selected status probe family
 
@@ -60,7 +60,7 @@ where `wIndex` selects an internal slot:
 | `0x20` | `0x55` | 25 | Issued after almost every write — link/ready check |
 | `0x18` | `0x02` | 2 | Issued only after each AHB bulk write — bulk completion status |
 
-PlustekLib only implements the `wIndex 0x00` case (`read_usb_speed_byte`).
+pyopticfilm only implements the `wIndex 0x00` case (`read_usb_speed_byte`).
 Semantics of `0x20` / `0x18` are **not yet proven** — `0x55` is the same value as
 the link-OK byte, so `0x20` may simply be another link check.
 
@@ -172,6 +172,5 @@ Still open:
 
 - Decoding this capture required five more tooling fixes (batched writes, high
   addresses, submit/completion merging, FE path detection, probe classification).
-  See `../SESSION_LOG.md`.
 - Registers written more than once, final values: `0x03` → `0x00`,
   `0x0b` → `0x4c`, `0x13` → `0x0f`, `0x33` → `0x1f`.

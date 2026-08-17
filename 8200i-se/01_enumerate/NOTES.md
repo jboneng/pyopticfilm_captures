@@ -71,11 +71,11 @@ string from Device Manager is **`Film Scanner (A2F)`** (the bring-up doc predict
 
 ## Extra observations
 
-- `plusteklib/usb/device.py` locates endpoints dynamically by direction + bulk
-  attribute, so `0x81` / `0x02` are picked up with **no code change needed**. The
-  interrupt endpoint `0x83` is unused by PlustekLib.
+- pyopticfilm locates endpoints dynamically by direction + bulk attribute, so
+  `0x81` / `0x02` are picked up with **no code change needed**. The interrupt
+  endpoint `0x83` is unused by pyopticfilm.
 - Interface 0 / alt 0 / configuration 1 match what `device.py` already claims.
 - Most of the 3094 frames belong to an unrelated busy device on the same root hub
   (address 5, ~2982 frames). Harmless — decoding filters by device address.
 - Tooling fixes were required before this capture could be decoded at all; see
-  `../SESSION_LOG.md`.
+  the pyopticfilm repo for decode tooling history.

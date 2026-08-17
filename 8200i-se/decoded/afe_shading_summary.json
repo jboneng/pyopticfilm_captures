@@ -1,5 +1,5 @@
 {
-  "note": "Full per-session dumps are regenerated with scripts/extract_se_afe_shading.py. Tests use afe_shading_fixture.json only.",
+  "note": "Full per-session dumps are regenerated with pyopticfilm scripts/extract_se_afe_shading.py. Tests use afe_shading_fixture.json only.",
   "sessions": {
     "03": {
       "fe_writes": 52,

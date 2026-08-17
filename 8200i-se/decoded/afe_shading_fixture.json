@@ -1,9 +1,9 @@
 {
   "description": "Compact capture-derived AFE/shading fixtures for OpticFilm 8200i SE (offline Step 1). Session 05 adds IR-pass finals.",
   "sources": {
-    "03": "captures/8200i-se/03_home_or_preview/03_home_or_preview.pcapng",
-    "04": "captures/8200i-se/04_color_1800/04_color_1800.pcapng",
-    "05": "captures/8200i-se/05_ir_1800/05_ir_1800.pcapng"
+    "03": "03_home_or_preview/03_home_or_preview.pcapng",
+    "04": "04_color_1800/04_color_1800.pcapng",
+    "05": "05_ir_1800/05_ir_1800.pcapng"
   },
   "constants": {
     "afe_strip_bytes": 3072,

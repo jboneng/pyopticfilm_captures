@@ -55,14 +55,14 @@ Then:
 1. **No** new `FEEDL`, **no** change to `0x02`
 2. Status `0x101` walks through motor-active then idle/home (`0xa5` → `0xad` → `0xec`)
 
-plusteklib: `Gl128.stop_motor` replays this when `AGOHOME` is armed.
+pyopticfilm: `Gl128.stop_motor` replays this when `AGOHOME` is armed.
 ## What this does not prove
 
 - Abort **during** `28292` / `13128` (before `AGOHOME`) — SilverFast never did
   that here; see session 12.
 - A reverse-home with the carriage mid-frame and `AGOHOME` clear.
 
-## Implications for plusteklib
+## Implications for pyopticfilm
 
 - Preview/image: set `AGOHOME` before `START`.
 - Abort during image: replay capture lamp strobe + clear `SCAN`; do not

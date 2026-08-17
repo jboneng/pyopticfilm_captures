@@ -28,7 +28,7 @@ then **again** `feed(28292)` + `feed(13128)`.
 
 There is **no** shorter “already mid-frame, just nudge Y” feed for the IR
 pass or for scan #2. Each channel pass starts from home with the full pair.
-plusteklib can treat every pass as: require home → `28292` → crop feed →
+pyopticfilm can treat every pass as: require home → `28292` → crop feed →
 image with `AGOHOME`.
 
 ## Gap example (cycle 1 RGB → cycle 2 IR)
@@ -38,7 +38,7 @@ image with `AGOHOME`.
 3. Calib / shading activity leaves home briefly (~39.3 s)
 4. Full feed pair starts again at ~42.4 s
 
-## Implications for plusteklib
+## Implications for pyopticfilm
 
 - `position_for_full_frame_scan()` from home every time is capture-faithful —
   including RGB→IR within one job.

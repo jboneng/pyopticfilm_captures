@@ -160,7 +160,7 @@ bytes 4..7 = transfer size,  little-endian
 ```
 
 Verified against all 27 preambles, e.g. `00 00 00 10 00 89 7e 01` →
-addr `0x10000000`, size `0x017e8900` = 25,069,824. **PlustekLib's `write_ahb`
+addr `0x10000000`, size `0x017e8900` = 25,069,824. **pyopticfilm's `write_ahb`
 layout is correct.**
 
 `wIndex` selects the mode:
@@ -172,7 +172,7 @@ layout is correct.**
 | `0x08` | **streaming image read** — used *only* for the 25 MB preview | 1 |
 
 `wIndex 0x08` is new and important: the small calibration reads use `0x00`, but
-the real image acquisition uses `0x08`. PlustekLib only ever sends `0x01`.
+the real image acquisition uses `0x08`. pyopticfilm only ever sends `0x01`.
 
 **Caveat:** for the three 4-byte writes the preamble declared `size = 4` but a
 full 512-byte bulk packet was sent (only the first 4 bytes non-zero). So the

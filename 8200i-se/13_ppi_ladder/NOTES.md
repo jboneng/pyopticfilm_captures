@@ -31,7 +31,8 @@ All are divisors of 7200. No free-entry values beyond this preset list were need
 
 Decode extract: [`decoded_ppi_ladder.json`](decoded_ppi_ladder.json).
 Feed + LINCNT extract: [`../decoded/ppi_lincnt_feed.json`](../decoded/ppi_lincnt_feed.json)
-(`uv run python scripts/extract_se_feeds.py`).
+(regenerate from the [pyopticfilm](https://github.com/jboneng/pyopticfilm) repo:
+`scripts/extract_se_feeds.py`).
 
 ## Image-pass LINCNT + feeds (session 13)
 
