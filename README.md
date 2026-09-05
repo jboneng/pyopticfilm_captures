@@ -34,17 +34,29 @@ For offline inspection you also need [Wireshark](https://www.wireshark.org/) (in
   01_enumerate/ … 13_ppi_ladder/   # numbered capture sessions
   decoded/                         # cross-session JSON fixtures
   SESSIONS.md                      # session index (start here)
+
+8100-v2/
+  01_enumerate/ … 06_y_crop_pair/  # numbered capture sessions
+  SESSIONS.md                      # session index (start here)
+  README.md                        # capture methodology for this model
 ```
 
-See [8200i-se/SESSIONS.md](8200i-se/SESSIONS.md) for the full session table, capture
-file names, and links to decode notes.
+See [8200i-se/SESSIONS.md](8200i-se/SESSIONS.md) or
+[8100-v2/SESSIONS.md](8100-v2/SESSIONS.md) for the full session table, capture file
+names, and links to decode notes.
 
 ## Using the captures
 
-**Wireshark display filter** (8200i SE only):
+**Wireshark display filter** (8200i SE):
 
 ```text
 usb.idVendor == 0x07b3 && usb.idProduct == 0x1825
+```
+
+**Wireshark display filter** (8100 V2):
+
+```text
+usb.idVendor == 0x07b3 && usb.idProduct == 0x1824
 ```
 
 Bulk image traffic only:
