@@ -19,9 +19,9 @@ so there is no IR-equivalent session here.
 |---|--------|------------------|--------|-------|
 | 01 | [01_enumerate/](01_enumerate/) | `01_enumerate.pcapng` | Done | [NOTES](01_enumerate/NOTES.md) |
 | 02 | [02_cold_boot_open/](02_cold_boot_open/) | `02_cold_boot_open.pcapng` | Done | [NOTES](02_cold_boot_open/NOTES.md) |
-| 03 | [03_prescan/](03_prescan/) | `03_prescan.pcapng` | Pending | [NOTES](03_prescan/NOTES.md) — first attempt was captured too late (setup stage only), needs redo |
+| 03 | [03_prescan/](03_prescan/) | `03_prescan.pcapng` | Done | [NOTES](03_prescan/NOTES.md) |
 | 04 | [04_color_7200/](04_color_7200/) | `04_color_7200.pcapng` | Done | [NOTES](04_color_7200/NOTES.md) — primary 7200 dpi reference |
-| 05 | [05_back_to_back_7200/](05_back_to_back_7200/) | `05_back_to_back_7200.pcapng` | Pending | [NOTES](05_back_to_back_7200/NOTES.md) |
+| 05 | [05_midtravel_home/](05_midtravel_home/) | `05_midtravel_home.pcapng` | Pending | [NOTES](05_midtravel_home/NOTES.md) — preview + Cancel mid-travel, modeled on SE session 08 |
 | 06 | [06_y_crop_pair/](06_y_crop_pair/) | `06a_crop_top_7200.pcapng`, `06b_crop_bottom_7200.pcapng` | Pending | [NOTES](06_y_crop_pair/NOTES.md) |
 
 See [README.md](README.md) in this folder for capture settings, physical safety, and
