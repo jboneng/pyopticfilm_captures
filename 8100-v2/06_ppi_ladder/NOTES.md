@@ -1,4 +1,4 @@
-# Session notes — 07_ppi_ladder
+# Session notes — 06_ppi_ladder
 
 Modeled on the 8200i SE dataset's
 [13_ppi_ladder](https://github.com/jboneng/pyopticfilm_captures/blob/main/8200i-se/13_ppi_ladder)
@@ -6,9 +6,8 @@ session, but captured as a **single continuous capture** (not one file per DPI)
 covering a preview followed by a color scan at every DPI **except 7200** (already
 covered by session 04, the primary 7200 dpi reference).
 
-- Capture file: `07_ppi_ladder.pcapng`, 562,829,880 bytes (~537 MiB), 98,544
+- Capture file: `06_ppi_ladder.pcapng`, 562,829,880 bytes (~537 MiB), 98,544
   frames, 321.718s
-- USBPcap interface used: same confirmed interface as prior sessions
 - Integrity: **Clean.** All frames are target-device (`07b3:1824`) traffic,
   no unrelated USB noise.
 - Content: 11 clearly separated segments (idle gaps of 3.2–7.7s between
@@ -43,5 +42,4 @@ covered by session 04, the primary 7200 dpi reference).
 - Outcome: all 11 steps present and cleanly separated; no dropped-packet
   warning reported (confirm from your own Wireshark session if you checked)
 - Any unusual event: none observed in the trace
-- Windows build: TODO — fill in
 - Date/time: 2026-09-05, ~23:09–23:15 local

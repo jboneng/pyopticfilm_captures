@@ -22,9 +22,8 @@ so there is no IR-equivalent session here.
 | 03 | [03_prescan/](03_prescan/) | `03_prescan.pcapng` | Done | [NOTES](03_prescan/NOTES.md) |
 | 04 | [04_color_7200/](04_color_7200/) | `04_color_7200.pcapng` | Done | [NOTES](04_color_7200/NOTES.md) — primary 7200 dpi reference |
 | 05 | [05_midtravel_home/](05_midtravel_home/) | `05_midtravel_home.pcapng` | Done | [NOTES](05_midtravel_home/NOTES.md) — preview + Cancel mid-travel, modeled on SE session 08 |
-| 06 | — | — | Skipped | Y-crop pair not captured — feed/geometry investigation covered sufficiently by sessions 04/07 |
-| 07 | [07_ppi_ladder/](07_ppi_ladder/) | `07_ppi_ladder.pcapng` | Done | [NOTES](07_ppi_ladder/NOTES.md) — single continuous capture: preview + scan at every DPI except 7200 |
-| 08 | [08_multi_exposure/](08_multi_exposure/) | `08_multi_exposure.pcapng` | Done | [NOTES](08_multi_exposure/NOTES.md) — single continuous capture: ME scan at 1200 dpi then 7200 dpi |
+| 06 | [06_ppi_ladder/](06_ppi_ladder/) | `06_ppi_ladder.pcapng` | Done | [NOTES](06_ppi_ladder/NOTES.md) — single continuous capture: preview + scan at every DPI except 7200 |
+| 07 | [07_multi_exposure/](07_multi_exposure/) | `07_multi_exposure.pcapng` | Done | [NOTES](07_multi_exposure/NOTES.md) — single continuous capture: ME scan at 1200 dpi then 7200 dpi |
 
 See [README.md](README.md) in this folder for capture settings, physical safety, and
 film/SilverFast consistency rules.

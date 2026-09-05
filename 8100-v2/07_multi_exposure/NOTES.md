@@ -1,4 +1,4 @@
-# Session notes — 08_multi_exposure
+# Session notes — 07_multi_exposure
 
 Modeled on the 8200i SE dataset's
 [14_multi_exposure_scans](https://github.com/jboneng/pyopticfilm_captures/blob/main/8200i-se/14_multi_exposure_scans)
@@ -6,9 +6,8 @@ session, but the 8100 V2 has no IR channel, so there is no IR variant here —
 only the Multi-Exposure (ME) toggle applies. Captured as a single continuous
 capture covering both DPIs.
 
-- Capture file: `08_multi_exposure.pcapng`, 1,896,314,064 bytes (~1.77 GiB),
+- Capture file: `07_multi_exposure.pcapng`, 1,896,314,064 bytes (~1.77 GiB),
   53,722 frames, 517.163s
-- USBPcap interface used: same confirmed interface as prior sessions
 - USBPcap buffer size used: 128 MiB
 - Integrity: **Clean.** All frames are target-device (`07b3:1824`) traffic,
   no unrelated USB noise. Total bulk payload: 1,893,001,968 bytes (~1.76 GiB).
@@ -35,5 +34,4 @@ capture covering both DPIs.
 - Outcome: both scans present and cleanly separated; no dropped-packet
   warning reported (confirm from your own Wireshark session if you checked)
 - Any unusual event: none observed in the trace
-- Windows build: TODO — fill in
 - Date/time: 2026-09-05, ~23:26 local

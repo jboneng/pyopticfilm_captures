@@ -2,7 +2,6 @@
 
 - Capture file: `04_color_7200.pcapng`, 919,800,308 bytes (~877 MiB), 18,788
   frames, 175.570s
-- USBPcap interface used: same confirmed interface as sessions 01–03
 - USBPcap buffer size raised to 128 MiB before this capture (per large
   bulk-IN volume expected)
 - Integrity: **Clean.** All frames are target-device (`07b3:1824`) traffic,
@@ -31,11 +30,8 @@
   future capture disagrees.
 - Scan settings: 7200 dpi, Color, iSRD OFF, HDR OFF, full 35mm frame, plain
   output
-- Film / holder position: TODO — confirm not moved from this point onward
-  through sessions 05/06
 - Action performed: one full-frame scan, allowed to finish normally, carriage
   returned home before stopping capture
 - Outcome: completed normally, no errors, no mechanical anomalies observed
 - Any unusual event: none beyond the timing observation above
-- Windows build: TODO — fill in
 - Date/time: 2026-09-05, ~22:54 local

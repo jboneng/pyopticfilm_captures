@@ -1,8 +1,6 @@
 # Session notes — 02_cold_boot_open
 
 - Capture file: `02_cold_boot_open.pcapng`, 30,528 bytes, 398 frames, 21.860s
-- USBPcap interface used: same single interface confirmed in 01_enumerate
-  (fill in exact `\\.\USBPcapN` number)
 - Integrity: **Clean.** No unrelated USB devices in the capture.
 - Content: three distinct init bursts, separated by idle gaps —
   - Burst 1: frames ~1–6, t=0.000s (initial enumeration-adjacent activity)
@@ -23,5 +21,4 @@
   frame/scanner-ready view, no prescan run
 - Outcome: completed normally, no errors, no mechanical anomalies
 - Any unusual event: none
-- Windows build: TODO — fill in
 - Date/time: 2026-09-05, ~22:44 local

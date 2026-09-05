@@ -1,16 +1,7 @@
 # Session notes — 03_prescan
 
-## Attempt 1 — INVALID, discarded
-
-- Capture was started after Prescan was already pressed: 360 bytes, 1 frame,
-  0s. Only the setup stage of a single URB_CONTROL was recorded. Superseded
-  by Attempt 2 below.
-
-## Attempt 2 — VALID
-
 - Capture file: `03_prescan.pcapng`, 40,068,240 bytes (~38.2 MiB), 10,228
   frames, 28.344s
-- USBPcap interface used: same confirmed interface as sessions 01/02
 - Integrity: **Clean.** All frames are target-device (`07b3:1824`) traffic,
   no unrelated USB noise.
 - Content:
@@ -31,5 +22,4 @@
   and carriage to return home before stopping
 - Outcome: completed normally, no errors, no mechanical anomalies observed
 - Any unusual event: none
-- Windows build: TODO — fill in
 - Date/time: 2026-09-05, ~22:47 local

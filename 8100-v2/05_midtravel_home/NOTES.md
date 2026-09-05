@@ -2,7 +2,6 @@
 
 - Capture file: `05_midtravel_home.pcapng`, 6,167,976 bytes (~5.9 MiB), 4,790
   frames, 10.516s
-- USBPcap interface used: same confirmed interface as prior sessions
 - Integrity: **Clean.** All frames are target-device (`07b3:1824`) traffic,
   no unrelated USB noise.
 - Content:
@@ -23,8 +22,6 @@
 - Outcome: capture is structurally consistent with a clean cancel + park —
   confirm from your own observation whether the carriage physically
   recovered/homed correctly and without any grinding/stalling
-- Any unusual event: TODO — confirm
-- Windows build: TODO — fill in
 - Date/time: 2026-09-05, ~23:06 local
 
 Modeled on the 8200i SE dataset's
